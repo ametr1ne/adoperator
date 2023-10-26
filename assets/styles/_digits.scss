@@ -1,0 +1,46 @@
+.digits {
+  padding: 265px 0 120px;
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    margin-bottom: 60px;
+  }
+
+  &-item {
+    text-align: center;
+    max-width: 213px;
+
+    &__value {
+      text-align: center;
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -8.36px;
+
+      align-self: stretch;
+
+      background: linear-gradient(210deg, rgba(255, 106, 231, 1) 0%, rgba(255, 106, 231, 0) 80%), linear-gradient(180deg, #FFE81F 0%, #FE3C00 100%) ;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      margin-bottom: 24px;
+    }
+
+    &__desc {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+
+      letter-spacing: -0.16px;
+    }
+  }
+
+  &__btn {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

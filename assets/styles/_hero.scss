@@ -1,0 +1,44 @@
+.hero {
+  position: relative;
+  padding: calc(145px + $header-height-lg) 0 0;
+
+  &-bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &-content {
+    max-width: 660px;
+  }
+
+  &-items {
+    position: absolute;
+    right: -119px;
+    top: -41px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+
+    &:last-child {
+      margin-top: 16px;
+    }
+  }
+
+  &__btn {
+    margin: 60px 0;
+    width: fit-content;
+  }
+}
