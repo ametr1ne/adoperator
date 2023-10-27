@@ -408,16 +408,20 @@ h1 {
   .hero-bg-mobile {
     display: block;
     position: absolute;
+    width: 100%;
   }
   .hero-items {
     display: none;
   }
   .hero-items-mobile {
     display: block;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
   .hero__title {
     text-align: center;
+  }
+  .hero-content {
+    margin: 0 auto;
   }
   .hero__desc {
     font-size: 20px;
@@ -722,6 +726,7 @@ h1 {
   .awards-bg-mobile {
     position: absolute;
     display: block;
+    width: 100%;
   }
   .awards__title {
     margin-bottom: 24px;
@@ -921,6 +926,7 @@ h1 {
 @media (max-width: 767px) {
   .targeting {
     margin-bottom: 0;
+    position: relative;
   }
   .targeting__title {
     margin-bottom: 24px;
@@ -928,6 +934,9 @@ h1 {
   .targeting-items {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .targeting-item {
+    max-width: 100%;
   }
   .targeting-item__img-wrapper {
     width: 52px;
@@ -1179,7 +1188,7 @@ h1 {
     margin-bottom: 24px;
   }
   .fast-guide .step {
-    max-width: 100%;
+    max-width: 288px;
     padding: 16px;
     height: 130px;
     background: url("../images/fast-guide/border-mobile.svg") no-repeat;

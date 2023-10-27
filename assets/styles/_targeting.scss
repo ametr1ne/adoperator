@@ -59,6 +59,7 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 0;
+    position: relative;
 
     &__title {
       margin-bottom: 24px;
@@ -70,6 +71,8 @@
     }
 
     &-item {
+      max-width: 100%;
+
       &__img-wrapper {
         width: 52px;
         height: 52px;
