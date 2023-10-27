@@ -56,4 +56,35 @@
       }
     }
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &-items {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    &-item {
+      &__img-wrapper {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 2px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: -0.14px;
+      }
+    }
+  }
 }

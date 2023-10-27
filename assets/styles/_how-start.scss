@@ -85,4 +85,49 @@
       right: 40px;
     }
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+    padding: 24px;
+    border-radius: 30px;
+
+    &__text {
+      row-gap: 16px;
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.16px;
+    }
+
+    .numbered-list {
+      row-gap: 12px;
+
+      &-item {
+        column-gap: 8px;
+
+        &__number {
+          width: 24px;
+          height: 24px;
+
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: -0.16px;
+        }
+      }
+    }
+
+    &__btn {
+      width: 100%;
+    }
+
+    &__img {
+      margin-top: 24px;
+      position: static;
+      width: 100%;
+      transform: translateY(0);
+    }
+  }
 }

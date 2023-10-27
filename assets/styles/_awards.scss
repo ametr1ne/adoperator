@@ -8,6 +8,9 @@
     top: -34px;
     object-fit: contain;
   }
+  &-bg-mobile {
+    display: none;
+  }
 
   &__title {
     margin-bottom: 60px;
@@ -186,6 +189,96 @@
 
       &__btn {
         margin-top: 40px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 40px;
+
+    &-bg {
+      display: none;
+    }
+    &-bg-mobile {
+      position: absolute;
+      display: block;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &-card {
+      border-radius: 30px;
+      padding: 24px;
+
+      &__header {
+        margin-bottom: 15px;
+      }
+
+      &__title {
+        font-size: 20px;
+        line-height: 140%;
+      }
+      &__desc {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.16px;
+      }
+
+      &__body {
+        flex-direction: column;
+        row-gap: 16px;
+      }
+
+      &__award {
+        p {
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: -0.14px;
+        }
+      }
+    }
+
+    .why {
+      margin: 40px 0 0;
+      padding: 24px;
+      border-radius: 30px;
+      box-shadow: 0px 17px 558px 0px rgba(254, 60, 0, 0.2),
+        0px 70px 470px 0px rgba(254, 60, 0, 0.17), 1px 1057px 634px 0px rgba(254, 60, 0, 0.1),
+        1px 1879px 752px 0px rgba(254, 60, 0, 0.03), 2px 936px 322px 0px rgba(254, 60, 0, 0);
+
+      &__title {
+        margin-bottom: 24px;
+      }
+
+      &-row {
+        row-gap: 20px;
+      }
+
+      &-card {
+        max-width: 100%;
+
+        &__icon {
+          width: 48px;
+          height: 48px;
+          margin-bottom: 8px;
+
+          svg {
+            width: 100%;
+            margin-top: -20px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: -0.14px;
+        }
+      }
+
+      &__btn {
+        width: 100%;
       }
     }
   }

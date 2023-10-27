@@ -134,4 +134,65 @@
       margin-top: 40px;
     }
   }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 40px;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    .steps {
+      flex-direction: column;
+      row-gap: 20px;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+
+    .step {
+      max-width: 100%;
+      padding: 16px;
+      height: 130px;
+      background: url("../images/fast-guide/border-mobile.svg") no-repeat;
+
+      &:last-child {
+        height: 152px;
+        background: url("../images/fast-guide/border-mobile-tall.svg") no-repeat;
+      }
+
+      &-title-wrapper {
+        height: 48px;
+        margin-bottom: 8px;
+      }
+
+      h4 {
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: 0.4px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: -0.14px;
+      }
+    }
+
+    .step-arrow {
+      transform: rotate(90deg);
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    &__btn {
+      padding: 12px 0;
+
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.16px;
+    }
+  }
 }

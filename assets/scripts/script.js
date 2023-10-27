@@ -15,3 +15,7 @@ nav_links.forEach(function (item, index) {
     document.body.classList.remove("opened");
   });
 });
+
+window.addEventListener("resize", function () {
+  burgerHandler();
+});

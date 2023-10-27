@@ -66,4 +66,35 @@
       }
     }
   }
+
+  @media (max-width: $mobile) {
+    padding: 0 0 40px;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &-row {
+      row-gap: 32px;
+    }
+
+    &-card {
+      img {
+        max-width: 450px;
+        margin-bottom: 12px;
+      }
+
+      h4 {
+        font-size: 20px;
+        line-height: 140%;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: -0.14px;
+      }
+    }
+  }
 }

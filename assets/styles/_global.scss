@@ -147,3 +147,30 @@ h1 {
     letter-spacing: 0.4px;
   }
 }
+
+@media (max-width: $mobile) {
+  html {
+    scroll-padding-top: $header-height-sm;
+  }
+
+  .container,
+  .container-thin,
+  .container-wide {
+    padding: 0 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .btn {
+    &_large,
+    &_medium,
+    &_small {
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
+}
