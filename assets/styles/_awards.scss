@@ -12,6 +12,7 @@
   &__title {
     margin-bottom: 60px;
     text-align: center;
+    position: relative;
   }
 
   &-cards {
@@ -23,7 +24,7 @@
   &-card {
     padding: 32px;
     border-radius: 32px;
-    background: rgba(28, 25, 25, 0.80);
+    background: rgba(28, 25, 25, 0.8);
     backdrop-filter: blur(5px);
     width: 100%;
     display: flex;
@@ -35,7 +36,7 @@
       justify-content: space-between;
       margin-bottom: 24px;
 
-      img  {
+      img {
         height: 64px;
         width: 64px;
       }
@@ -84,13 +85,14 @@
   }
 
   .why {
-    margin: 120px auto 0;
-    max-width: 1280px;
+    margin: 120px 0 0;
     padding: 120px 60px 120px;
     border-radius: 60px;
-    background: rgba(28, 25, 25, 0.80);
+    background: rgba(28, 25, 25, 0.8);
 
-    box-shadow: 0px 117px 258px 0px rgba(254, 60, 0, 0.20), 0px 470px 470px 0px rgba(254, 60, 0, 0.17), 1px 1057px 634px 0px rgba(254, 60, 0, 0.10), 1px 1879px 752px 0px rgba(254, 60, 0, 0.03), 2px 2936px 822px 0px rgba(254, 60, 0, 0.00);
+    box-shadow: 0px 117px 258px 0px rgba(254, 60, 0, 0.2),
+      0px 470px 470px 0px rgba(254, 60, 0, 0.17), 1px 1057px 634px 0px rgba(254, 60, 0, 0.1),
+      1px 1879px 752px 0px rgba(254, 60, 0, 0.03), 2px 2936px 822px 0px rgba(254, 60, 0, 0);
     backdrop-filter: blur(5px);
 
     &__title {
@@ -118,6 +120,9 @@
         width: 64px;
         height: 64px;
         margin-bottom: 24px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
       }
 
       p {
@@ -133,6 +138,55 @@
     &__btn {
       margin: 60px auto 0;
       width: fit-content;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 60px;
+    overflow: hidden;
+
+    &-bg {
+      width: unset;
+      top: 165px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &-cards {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    &-card {
+      &__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+      }
+    }
+
+    .why {
+      margin: 60px 0 0;
+      padding: 60px;
+
+      &__title {
+        margin-bottom: 40px;
+      }
+
+      &-row {
+        flex-wrap: wrap;
+        row-gap: 40px;
+
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+
+      &__btn {
+        margin-top: 40px;
+      }
     }
   }
 }

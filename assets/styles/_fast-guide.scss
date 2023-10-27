@@ -1,0 +1,137 @@
+.fast-guide {
+  padding-bottom: 120px;
+  position: relative;
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .steps {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+
+    border-bottom: 1px solid rgba(#ff7d1f, 0.5);
+  }
+
+  .step {
+    border-radius: 32px;
+    height: 211px;
+    padding: 30px;
+    max-width: 346px;
+    background: url("../images/fast-guide/border.svg") no-repeat;
+    background-size: contain;
+
+    &-title-wrapper {
+      height: 55px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h4 {
+      width: 100%;
+      text-align: center;
+
+      text-shadow: -2px 0px 4px rgba(254, 60, 0, 0.39), -7px 0px 7px rgba(254, 60, 0, 0.34),
+        -16px 0px 10px rgba(254, 60, 0, 0.2), -28px 0px 11px rgba(254, 60, 0, 0.06),
+        -44px 0px 12px rgba(254, 60, 0, 0.01);
+
+      background: linear-gradient(180deg, rgba(255, 106, 231, 1) 0%, rgba(255, 106, 231, 0) 80%),
+        linear-gradient(180deg, #ffe81f 0%, #fe3c00 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: -8.36px;
+    }
+
+    p {
+      color: $gray-text;
+      text-align: center;
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.16px;
+    }
+  }
+
+  &__desc {
+    max-width: 940px;
+    background: linear-gradient(210deg, rgba(255, 106, 231, 1) 0%, rgba(255, 106, 231, 0) 80%),
+      linear-gradient(180deg, #ffe81f 0%, #fe3c00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    margin-top: 60px;
+    padding: 32px 44px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+  }
+
+  &__glow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 60px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    .steps {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+      column-gap: unset;
+    }
+
+    .step {
+      background: url("../images/fast-guide/border-tablet.svg") no-repeat;
+      max-width: 189px;
+      height: 275px;
+
+      &-title-wrapper {
+        margin-bottom: 12px;
+      }
+
+      p {
+        letter-spacing: -0.16px;
+      }
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+  }
+}
