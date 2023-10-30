@@ -94,15 +94,6 @@
     letter-spacing: -0.24px;
   }
 
-  &__glow {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: -1;
-  }
-
   @media (max-width: $tablet) {
     padding-bottom: 60px;
 
