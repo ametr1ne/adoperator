@@ -47,7 +47,6 @@
 
   @media (max-width: $tablet) {
     padding: 32px 0;
-    margin: 0 -10px;
 
     &__glow {
       display: none;
@@ -56,6 +55,7 @@
     &__content {
       flex-direction: column;
       align-items: flex-start;
+      margin: 0 -10px;
     }
 
     &__left {
@@ -71,6 +71,10 @@
   @media (max-width: $mobile) {
     padding: 32px 16px;
     margin: 0;
+
+    &__content {
+      margin: 0;
+    }
 
     &__left {
       margin-bottom: 32px;

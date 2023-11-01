@@ -6,6 +6,11 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <script defer src="./assets/scripts/script.js"></script>
     <title>Adoperator</title>
@@ -1167,7 +1172,22 @@
             </h2>
             <div class="formats-row">
               <div class="formats-card">
-                <img src="./assets/images/formats/formats1.png" alt="1" />
+                <div class="img-wrapper">
+                  <img
+                    class="img-wrapper__bg"
+                    src="./assets/images/formats/formats-1.png"
+                    alt="1" />
+                  <div class="img-wrapper__push push-1">
+                    <img
+                      src="./assets/images/formats/print.svg"
+                      alt="print"
+                      class="img-wrapper__icon" />
+                    <div class="img-wrapper__text">
+                      <h5>Push name</h5>
+                      <p>Short ads text about product</p>
+                    </div>
+                  </div>
+                </div>
                 <h4>WebPush</h4>
                 <p>
                   A clickable message instantly delivered to Android&nbsp;device, ensuring
@@ -1176,7 +1196,33 @@
                 </p>
               </div>
               <div class="formats-card">
-                <img src="./assets/images/formats/formats2.png" alt="2" />
+                <div class="img-wrapper">
+                  <img
+                    class="img-wrapper__bg"
+                    src="./assets/images/formats/formats-2.png"
+                    alt="2" />
+                  <div class="img-wrapper__push push-2">
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.23569 2.23578C6.36587 2.10561 6.36587 1.89455 6.23569 1.76438C6.10552 1.6342 5.89446 1.6342 5.76429 1.76438L3.99999 3.52868L2.23569 1.76438C2.10552 1.6342 1.89446 1.6342 1.76429 1.76438C1.63411 1.89455 1.63411 2.10561 1.76429 2.23578L3.52859 4.00008L1.76429 5.76438C1.63411 5.89455 1.63411 6.10561 1.76429 6.23578C1.89446 6.36596 2.10552 6.36596 2.23569 6.23578L3.99999 4.47149L5.76429 6.23578C5.89446 6.36596 6.10552 6.36596 6.23569 6.23578C6.36587 6.10561 6.36587 5.89455 6.23569 5.76438L4.47139 4.00008L6.23569 2.23578Z"
+                        fill="white" />
+                    </svg>
+                    <img
+                      src="./assets/images/formats/print.svg"
+                      alt="print"
+                      class="img-wrapper__icon" />
+                    <div class="img-wrapper__text">
+                      <h5>Push name</h5>
+                      <p>Short ads text about product</p>
+                    </div>
+                    <div class="img-wrapper__btn">Call To Action</div>
+                  </div>
+                </div>
                 <h4>Clickunder/Popunder</h4>
                 <p>
                   Full Screen. Appearing behind a browser window&nbsp;in&nbsp;whole page layout, it
@@ -1184,7 +1230,22 @@
                 </p>
               </div>
               <div class="formats-card">
-                <img src="./assets/images/formats/formats3.png" alt="3" />
+                <div class="img-wrapper">
+                  <img
+                    class="img-wrapper__bg"
+                    src="./assets/images/formats/formats-3.png"
+                    alt="3" />
+                  <div class="img-wrapper__push push-3">
+                    <img
+                      src="./assets/images/formats/print.svg"
+                      alt="print"
+                      class="img-wrapper__icon" />
+                    <div class="img-wrapper__text">
+                      <h5>Push name</h5>
+                      <p>Short ads text about product</p>
+                    </div>
+                  </div>
+                </div>
                 <h4>Inpage Push</h4>
                 <p>
                   Ads displayed directly on the website, seamlessly&nbsp;function across all devices
@@ -1319,7 +1380,6 @@
               after the first results and generate deeper recommendations
             </p>
             <a href="#" class="btn btn_red btn_large fast-guide__btn">Register Now</a>
-            
           </section>
         </div>
       </div>
@@ -1327,11 +1387,10 @@
     <footer class="footer">
       <img src="./assets/images/fast-guide/glow.png" alt="glow" class="footer__glow" />
       <div class="container">
-        <ul class="footer__content">
+        <div class="footer__content">
           <div class="footer__left">
-            <p>Adoperator Media Ltd. Omirou, 10 Limassol 3095, Cyprus
-              </p>
-              <p>© 2018-2023 Ad Operator Inc. All rights reserved</p>
+            <p>Adoperator Media Ltd. Omirou, 10 Limassol 3095, Cyprus</p>
+            <p>© 2018-2023 Ad Operator Inc. All rights reserved</p>
           </div>
           <ul class="footer__right">
             <li>
